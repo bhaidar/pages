@@ -190,7 +190,7 @@ THE SOFTWARE.
 MIT
 MIT
 
-ngx-material-pages@1.0.0
+ngx-material-pages@1.0.1
 MIT
 MIT License
 
