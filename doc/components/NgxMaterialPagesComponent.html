@@ -86,14 +86,14 @@
                         <a href="modules/NgxMaterialPagesModule.html" data-type="entity-link">NgxMaterialPagesModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-NgxMaterialPagesModule-2975e206-ce1d-4386-b52d-112c512af68c"
+                                        data-target="#xs-components-links-module-NgxMaterialPagesModule-3b5c9193-109d-459e-b298-29e21244e74b"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-NgxMaterialPagesModule-2975e206-ce1d-4386-b52d-112c512af68c"
+                                        id="xs-components-links-module-NgxMaterialPagesModule-3b5c9193-109d-459e-b298-29e21244e74b"
                                     >
                                         <li class="link">
                                             <a href="components/NgxMaterialPagesComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialPagesComponent</a>
@@ -216,14 +216,14 @@
                         <a href="modules/NgxMaterialPagesModule.html" data-type="entity-link">NgxMaterialPagesModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-NgxMaterialPagesModule-2975e206-ce1d-4386-b52d-112c512af68c"
+                                        data-target="#components-links-module-NgxMaterialPagesModule-3b5c9193-109d-459e-b298-29e21244e74b"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-NgxMaterialPagesModule-2975e206-ce1d-4386-b52d-112c512af68c"
+                                        id="components-links-module-NgxMaterialPagesModule-3b5c9193-109d-459e-b298-29e21244e74b"
 >
                                         <li class="link">
                                             <a href="components/NgxMaterialPagesComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">NgxMaterialPagesComponent</a>
@@ -1190,7 +1190,7 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
     &lt;/mat-toolbar&gt;
     &lt;div class&#x3D;&quot;demo-sidenav-content main-container&quot;&gt;
 
-      &lt;mat-tab-group [selectedIndex]&#x3D;&quot;index&quot; style&#x3D;&quot;min-height: 15vh;&quot;&gt;
+      &lt;mat-tab-group [selectedIndex]&#x3D;&quot;index&quot; style&#x3D;&quot;min-height: 15vh;&quot; class&#x3D;&quot;hide-deep&quot;&gt;
         &lt;button mat-fab color&#x3D;&quot;warn&quot; (click)&#x3D;&quot;previous()&quot;&gt;
           &lt;mat-icon&gt;location&lt;/mat-icon&gt;
         &lt;/button&gt;
@@ -1247,7 +1247,7 @@ export class NgxMaterialPagesComponent implements OnInit, AfterContentInit {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><mat-sidenav-container>  <mat-sidenav #sidenav [mode]="navMode" opened="true"               [fixedInViewport]="\'false\'" [fixedTopGap]="\'false\'" [fixedBottomGap]="\'false\'">    <mat-toolbar color="primary">    </mat-toolbar>    <mat-vertical-stepper [selectedIndex]="index" (selectionChange)="onStepSelectionChange($event)">      <mat-step *ngFor="let page of pages;let i = index;" [label]="page.pageOutlook.title">        <ng-container [ngTemplateOutlet]="page.pageOutlook.content"></ng-container>      </mat-step>    </mat-vertical-stepper>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar color="primary">      <button mat-icon-button (click)="sidenav.toggle()">        <mat-icon>menu</mat-icon>      </button>      {{title}}    </mat-toolbar>    <div class="demo-sidenav-content main-container">      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;">        <button mat-fab color="warn" (click)="previous()">          <mat-icon>location</mat-icon>        </button>        <mat-tab *ngFor="let page of pages;let i = index;">          <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>        </mat-tab>      </mat-tab-group>      <div class="navigation-buttons">        <button mat-fab color="primary" (click)="previous()" [disabled]="index == 0">          <mat-icon>chevron_left</mat-icon>        </button>        <div *ngIf="index == totalPages - 1;then finished else nextAvailable">        </div>        <ng-template #nextAvailable>          <button mat-fab color="primary" (click)="next()">            <mat-icon>chevron_right</mat-icon>          </button>        </ng-template>        <ng-template #finished>          <button mat-fab color="accent" (click)="done.next()">            <mat-icon>done</mat-icon>          </button>        </ng-template>      </div>    </div>  </mat-sidenav-content></mat-sidenav-container></div>'
+        var COMPONENT_TEMPLATE = '<div><mat-sidenav-container>  <mat-sidenav #sidenav [mode]="navMode" opened="true"               [fixedInViewport]="\'false\'" [fixedTopGap]="\'false\'" [fixedBottomGap]="\'false\'">    <mat-toolbar color="primary">    </mat-toolbar>    <mat-vertical-stepper [selectedIndex]="index" (selectionChange)="onStepSelectionChange($event)">      <mat-step *ngFor="let page of pages;let i = index;" [label]="page.pageOutlook.title">        <ng-container [ngTemplateOutlet]="page.pageOutlook.content"></ng-container>      </mat-step>    </mat-vertical-stepper>  </mat-sidenav>  <mat-sidenav-content>    <mat-toolbar color="primary">      <button mat-icon-button (click)="sidenav.toggle()">        <mat-icon>menu</mat-icon>      </button>      {{title}}    </mat-toolbar>    <div class="demo-sidenav-content main-container">      <mat-tab-group [selectedIndex]="index" style="min-height: 15vh;" class="hide-deep">        <button mat-fab color="warn" (click)="previous()">          <mat-icon>location</mat-icon>        </button>        <mat-tab *ngFor="let page of pages;let i = index;">          <ng-container [ngTemplateOutlet]="page.pageContent.content"></ng-container>        </mat-tab>      </mat-tab-group>      <div class="navigation-buttons">        <button mat-fab color="primary" (click)="previous()" [disabled]="index == 0">          <mat-icon>chevron_left</mat-icon>        </button>        <div *ngIf="index == totalPages - 1;then finished else nextAvailable">        </div>        <ng-template #nextAvailable>          <button mat-fab color="primary" (click)="next()">            <mat-icon>chevron_right</mat-icon>          </button>        </ng-template>        <ng-template #finished>          <button mat-fab color="accent" (click)="done.next()">            <mat-icon>done</mat-icon>          </button>        </ng-template>      </div>    </div>  </mat-sidenav-content></mat-sidenav-container></div>'
     var COMPONENTS = [{'name': 'LibComponent', 'selector': 'ngx-material-component'},{'name': 'NgxMaterialPageContentComponent', 'selector': 'ngx-material-page-content'},{'name': 'NgxMaterialPageLoaderComponent', 'selector': 'ngx-material-page-loader'},{'name': 'NgxMaterialPageOutlookComponent', 'selector': 'ngx-material-page-outlook'},{'name': 'NgxMaterialPagesComponent', 'selector': 'ngx-material-pages'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'NgxMaterialPagesComponent'};
