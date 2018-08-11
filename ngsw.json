@@ -8,12 +8,7 @@
       "updateMode": "prefetch",
       "urls": [
         "/favicon.ico",
-        "/index.html",
-        "/0.31ee51bb190d00a0b5c0.chunk.js",
-        "/inline.5c1bb246818e3799bd44.bundle.js",
-        "/main.1f961005ce6268a713ce.bundle.js",
-        "/polyfills.9b588037eb540a556f53.bundle.js",
-        "/styles.bc0928dc6ca699ce4cb4.bundle.css"
+        "/index.html"
       ],
       "patterns": []
     },
@@ -23,7 +18,6 @@
       "updateMode": "prefetch",
       "urls": [
         "/assets/.npmignore",
-        "/assets/logo.svg",
         "/assets/icons/github.svg",
         "/assets/lib/hljs/CHANGES.md",
         "/assets/lib/hljs/LICENSE",
@@ -111,26 +105,19 @@
         "/assets/lib/hljs/styles/vs2015.css",
         "/assets/lib/hljs/styles/xcode.css",
         "/assets/lib/hljs/styles/xt256.css",
-        "/assets/lib/hljs/styles/zenburn.css"
+        "/assets/lib/hljs/styles/zenburn.css",
+        "/assets/logo.svg"
       ],
       "patterns": []
     }
   ],
   "dataGroups": [],
   "hashTable": {
-    "/0.31ee51bb190d00a0b5c0.chunk.js": "68ee6e0916e3ace83ea53f4955db279dc9f1d952",
     "/assets/.npmignore": "da39a3ee5e6b4b0d3255bfef95601890afd80709",
-    "/inline.5c1bb246818e3799bd44.bundle.js": "964a00af3179aca8a27198d087d89f3159b3f5b4",
-    "/assets/logo.svg": "0b3394341548880427c38ed78beb990863a4e8cb",
-    "/main.1f961005ce6268a713ce.bundle.js": "fcf8d2644d3a3bd4c25cec0cdb7762bfc8beec5b",
     "/assets/icons/github.svg": "ee58bd52af4b2c26ed6b172de6e10d748a7d9f66",
-    "/polyfills.9b588037eb540a556f53.bundle.js": "81f4bd20e7805f34dff874b88a677ecc42092684",
     "/assets/lib/hljs/CHANGES.md": "74060b189b3562bd68cc8807789eb431ecb52430",
-    "/styles.bc0928dc6ca699ce4cb4.bundle.css": "a08c339f9c064f27bfb8729e1ca96a9ed4d60ff0",
     "/assets/lib/hljs/LICENSE": "cd25196630fe891662ad77810f0f6dee5bc85ddc",
-    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
     "/assets/lib/hljs/README.md": "087887d419ba2c138058e6fac56c24d838bb4114",
-    "/index.html": "6eefba3521f75d87d8bc878fac495029d5654312",
     "/assets/lib/hljs/README.ru.md": "3bb30d5980b6a10df92cf223cf9c35d884ebe1ba",
     "/assets/lib/hljs/highlight.pack.js": "f109e939c396d7d5874f59ec6e7886f5f9db2496",
     "/assets/lib/hljs/styles/agate.css": "8e122b0f00f5a7ec4e6dc492bf1560441eeef7f0",
@@ -214,6 +201,27 @@
     "/assets/lib/hljs/styles/vs2015.css": "3c7fa677de2a785d90fc6c3f7520ac1b11bfd37a",
     "/assets/lib/hljs/styles/xcode.css": "65d775a7e11e238c91e0d3c7370547348c92d6b3",
     "/assets/lib/hljs/styles/xt256.css": "bbe28ec69177699cb6300d777598adf6323f7861",
-    "/assets/lib/hljs/styles/zenburn.css": "933a3b196d01254dea5e6f48105ea15e210ae000"
-  }
+    "/assets/lib/hljs/styles/zenburn.css": "933a3b196d01254dea5e6f48105ea15e210ae000",
+    "/assets/logo.svg": "0b3394341548880427c38ed78beb990863a4e8cb",
+    "/favicon.ico": "84161b857f5c547e3699ddfbffc6d8d737542e01",
+    "/index.html": "ba1cb13e913d619f158a47c0670b0f31c75d0531"
+  },
+  "navigationUrls": [
+    {
+      "positive": true,
+      "regex": "^\\/.*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*\\.[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*$"
+    },
+    {
+      "positive": false,
+      "regex": "^\\/(?:.+\\/)?[^/]*__[^/]*\\/.*$"
+    }
+  ]
 }
